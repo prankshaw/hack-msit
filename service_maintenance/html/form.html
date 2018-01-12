@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+    body
+    {
+        background-color: chocolate;
+    }
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: burlywood;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<h2>CONTACT FORM</h2>
+
+<div class="container">
+    <div class="row">
+      <div class="col-25">
+        <label for="Organisation Name">Organisation Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Organisation Name" name="Organisation Name" placeholder="Your organisation name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Contact NO.">Contact NO.</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Contact NO." name="Contact NO." placeholder="Your contact no...">
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="Address">Address</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Address" name="Address" placeholder="Your address..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Services">Serices</label>
+      </div>
+      <div class="col-75">
+        <select id="services" name="Services">
+          <option value="Medication">Medication</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Food">Food</option>
+             <option value="Household Things">Household Things</option>
+             <option value="Electrician">Electrician</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Problem">Problem</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Problem" name="Problem" placeholder="Write your problem.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <a href="C:\Users\pranjal\Desktop\service_maintenance\html\welcome.html"><input type="submit" value="Submit"></a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<title>Crucio Bros|Welcome</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap">
+  <link rel="stylesheet" type="text/css" href="C:\Users\pranjal\Desktop\service_maintenance\responsive.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+#about
+{
+  font-size: 25px;
+}
+</style>
+<body>
+<header style="height: 200px">
+  <div class="container">
+    <div id="branding">
+    <h1><span class="highlite">Crucio Bros</span> Web Services</h1>
+    </div>
+    <nav>
+    <ul>
+    <li class="current"><a href="page.html">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="C:\Users\pranjal\Desktop\service_maintenance\html\login2.html">Log In</a></li>
+    <li><a href="C:\Users\pranjal\Desktop\service_maintenance\html\signup3.html">Sign Up</a></li>
+     <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+.mySlides {display:none}
+</style>
+<div id="change">
+  <div class="w3-content w3-section" style="width:1000px">
+    <img class="mySlides" src="C:\Users\pranjal\Desktop\service_maintenance\images\NGO-Websites-Designing-Services.png" style="width:80%;height: 30%">
+    <img class="mySlides" src="C:\Users\pranjal\Desktop\service_maintenance\images\images.jpg" style="width:80%;height: 30%">
+    <img class="mySlides" src="C:\Users\pranjal\Desktop\service_maintenance\images\charity.png" style="width:80%;height: 30%">
+    <img class="mySlides" src="C:\Users\pranjal\Desktop\service_maintenance\images\ngo-services-250x250.jpg" style="width:80%;height: 30%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+  <div id="about">
+    <p class="stylebody">NGOs are usually funded by donations, but some avoid formal funding altogether and are run primarily by volunteers. NGOs are highly diverse groups of organizations engaged in a wide range of activities, and take different forms in different parts of the world. Some may have charitable status, while others may be registered for tax exemption based on recognition of social purposes. Others may be fronts for political, religious, or other interests. Since the end of World War II, NGOs have had an increasing role in international development,[13] particularly in the fields of humanitarian assistance and poverty alleviation.[14]
+
+    he term 'NGO' is not always used consistently. In some countries the term NGO is applied to an organization that in another country would be called an NPO (nonprofit organization), and vice versa. Political parties and trade unions are considered NGOs only in some countries. There are many different classifications of NGO in use. The most common focus is on "orientation" and "level of operation". An NGO's orientation refers to the type of activities it takes on. These activities might include human rights, environmental, improving health, or development work. An NGO's level of operation indicates the scale at which an organization works, such as local, regional, national, or international.[20]
+ </p>
+    <br>
+    The term "non-governmental organization" was first coined in 1945, when the United Nations (UN) was created.[21] The UN, itself an intergovernmental organization, made it possible for certain approved specialized international non-state agencies — i.e., non-governmental organizations — to be awarded observer status at its assemblies and some of its meetings. Later the term became used more widely. Today, according to the UN, any kind of private organization that is independent from government control can be termed an "NGO", provided it is not-for-profit, nonprevention,[clarification needed] but not simply an opposition political party.
+ 
+  </div>
+
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center"><a href="#contact">CONTACT</a></h2>
+    <p class="w3-opacity w3-center"><i>Need Help? Contact us!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> New Delhi, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 97XXXXXXX0<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: cruciobros@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<footer >
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><span class="highlite">Hack@MSIT</span></a></p>
+  <p><span class="highlite">Crucio Bros</span> Web Services, Copyright &copy; 2018 </p>
+</footer>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
